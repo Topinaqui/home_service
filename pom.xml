@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.faiton</groupId>
-	<artifactId>school_painel</artifactId>
+	<artifactId>school_panel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>school_painel</name>
-	<description>School Painel</description>
+	<name>school_panel</name>
+	<description>School Panel</description>
 
 	<properties>
 		<java.version>1.8</java.version>
