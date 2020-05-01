@@ -1,13 +1,13 @@
-package com.faiton.school_painel;
+package com.faiton.school_panel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SchoolPainelApplication {
+public class SchoolPanelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SchoolPainelApplication.class, args);
+		SpringApplication.run(SchoolPanelApplication.class, args);
 	}
 
 }

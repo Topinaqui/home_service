@@ -1,4 +1,4 @@
-package com.faiton.school_painel.model;
+package com.faiton.school_panel.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -55,6 +55,30 @@ public class School {
     public String getName() {
         return name;
     }
+
+	public School(String name, String description, String clientTypeCode) {
+		this.name = name;
+		this.description = description;
+		this.clientTypeCode = clientTypeCode;
+    }
+    
+    public School() {}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getClientTypeCode() {
+		return clientTypeCode;
+	}
+
+	public void setClientTypeCode(String clientTypeCode) {
+		this.clientTypeCode = clientTypeCode;
+	}
 
     
 }
