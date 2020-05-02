@@ -22,18 +22,12 @@ public class InitialController {
   
   @GetMapping("/news")
   public List<News> getAllNews() {
-
-    // repository.save(new News("Nova Listagem", "Agora temos a nova listagem."));
-     
     return repository.findAll();
   }
 
 @GetMapping("/news/{id}")
-  public School getNewsById(@PathVariable("id") Long id) {
-
-    News news = new News("Nova Listagem", "Agora temos a nova listagem.");
-
-    return news;
+  public News getNewsById(@PathVariable("id") Long id) {
+    return  repository.findById(id).orElse(new News());
   }
   
 }
