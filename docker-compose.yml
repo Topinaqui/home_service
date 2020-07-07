@@ -1,0 +1,4 @@
+home:
+  image: home-service
+  ports:
+    - 9000:9000

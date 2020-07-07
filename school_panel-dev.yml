@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  school_panel:
+    container_name: school_panel
+    image: school_panel:v1
+    ports:
+      - 9000:9000
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - fenix 
+
+networks:
+  fenix:
+    external: true
