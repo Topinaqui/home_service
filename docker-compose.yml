@@ -1,4 +1,9 @@
-home:
-  image: home-service
-  ports:
-    - 9000:9000
+version: '3.5'
+
+services:
+  home_service:
+    container_name: home_service
+    # image: home-service
+    build: .
+    ports:
+      - 9000:9000

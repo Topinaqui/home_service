@@ -1,20 +1,20 @@
 package com.faiton.school_panel.model;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-
-
-import java.sql.Date;
+import javax.persistence.Id;
 
 
 @Entity
 public class News {
 
     @Id
-    @GeneratedValue( strategy = GenerationType.AUTO )
+    // @GeneratedValue( strategy = GenerationType.AUTO )
+    @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Long id;
 
     @Column(name = "title")
